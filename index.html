@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>um tesouro pra você ✨</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Marcellus&family=Manrope:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="sky"></div>
+<canvas id="stars"></canvas>
+<div class="fog f1"></div>
+<div class="fog f2"></div>
+<div class="fog f3"></div>
+
+<div id="scene">
+  <div class="eyebrow">um tesouro escondido só pra você</div>
+
+  <div id="treasure" role="button" tabindex="0" aria-label="Abrir o coração e revelar a mensagem">
+    <div class="halo"></div>
+    <div class="ring r2"></div>
+    <div class="ring r3"></div>
+
+    <svg id="heart" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="heartGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#c084fc"/>
+          <stop offset="45%" stop-color="#9b5de5"/>
+          <stop offset="100%" stop-color="#5b1fa8"/>
+        </linearGradient>
+      </defs>
+      <path class="heart-fill" d="M50 88 C15 62 5 40 5 24 C5 8 20 2 30 2 C40 2 48 10 50 18 C52 10 60 2 70 2 C80 2 95 8 95 24 C95 40 85 62 50 88 Z"/>
+      <path class="heart-seam" d="M50 18 C50 40 50 65 50 82"/>
+    </svg>
+
+    <svg class="lock-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="5" y="11" width="14" height="10" rx="2" stroke="#f3e8ff" stroke-width="1.6"/>
+      <path d="M8 11V7a4 4 0 018 0v4" stroke="#f3e8ff" stroke-width="1.6" stroke-linecap="round"/>
+      <circle cx="12" cy="16" r="1.4" fill="#f3e8ff"/>
+    </svg>
+  </div>
+
+  <div class="hint"><span class="shimmer">toque no coração para abrir</span></div>
+
+  <div id="message">
+    <span class="quote-mark">“</span>
+    <p>Boa noite, <span class="accent">moça mais linda</span> que eu tive a sorte de conhecer 🤓💜💜💜</p>
+    <div class="moon">🌙 ✨</div>
+    <div class="signature">durma bem</div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
